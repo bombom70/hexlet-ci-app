@@ -20,9 +20,11 @@ jobs:
       - run: make test
   lint:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - run: make lint
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - run: make test
