@@ -18,13 +18,4 @@ jobs:
       - run: make setup
       - run: make lint
       - run: make test
-  lint:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - run: make lint
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - run: make test
+      - uses: hexlet-components/hello-from-hexlet-action@release
