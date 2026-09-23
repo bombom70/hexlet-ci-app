@@ -11,10 +11,9 @@ jobs:
       - name: Setup pnpm and Node
         uses: pnpm/setup@v1
         with:
-          version: 11
           runtime: node@26
           cache: true
-          install: false    # Отключить автоустановку, использовать make setup
+          install: false
 
       - run: make setup
       - run: make lint
