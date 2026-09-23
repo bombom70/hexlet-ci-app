@@ -9,6 +9,5 @@ afterAll(async () => {
 });
 
 it("strapi is defined", () => {
-  throw("EEEE")
   expect(strapi).toBeDefined(); // eslint-disable-line
 });
